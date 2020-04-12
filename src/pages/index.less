@@ -75,13 +75,15 @@
      .box {
         width: 28%;
         height: 150px;
-        background: #fff; 
+        background: rgb(195, 195, 204); 
         border-radius: 10px; 
         margin-bottom: 50px; 
         padding: 10px;
         box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .03);
+        transition: transform .5s;
         .up {
             height: 70%;
+            padding-right: 50px;
         }
         .down {
             img {
@@ -89,6 +91,12 @@
                 margin: -8px 10px; 
             }
         }
+        .down:hover {
+            cursor: pointer;
+        }
+     }
+     .box:hover {
+         transform: scale(1.1);
      }
   }
   .footer {

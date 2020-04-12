@@ -1,39 +1,49 @@
 const mainList = [
     {
         logo: 'static/images/logo1.png',
-        name: 'Personal Information'
+        name: 'Personal Information',
+        routerName: 'BaseInfo'
+        
     },
     {
         logo: 'static/images/logo3.png',
-        name: 'JavaScript'
+        name: 'JavaScript',
+        routerName: 'Js'
     },
     {
         logo: 'static/images/logo3.png',
-        name: 'CSS'
+        name: 'CSS',
+        routerName: 'Css'
     },
     {
         logo: 'static/images/logo3.png',
-        name: 'React'
+        name: 'React',
+        routerName: 'React'
     },
     {
         logo: 'static/images/logo3.png',
-        name: 'LeetCode'
+        name: 'LeetCode',
+        routerName: 'LeetCode'
     },
     {
         logo: 'static/images/logo2.png',
-        name: 'Favorite Movies'
+        name: 'Favorite Movies',
+        routerName: 'Movies'
     },
     {
         logo: 'static/images/logo2.png',
-        name: 'Classic Books'
+        name: 'Classic Books',
+        routerName: 'Books'
     },
     {
         logo: 'static/images/logo4.png',
-        name: 'Ablum'
+        name: 'Ablum',
+        routerName: 'Album'
     },
     {
         logo: 'static/images/logo5.png',
-        name: 'expand'
+        name: 'expand',
+        routerName: 'Expand'
     },
 
 ];

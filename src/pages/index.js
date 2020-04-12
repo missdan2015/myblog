@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './index.less';
 import {
     mainList,
@@ -20,7 +21,6 @@ export default class Index extends Component {
     componentDidMount() {
         window.addEventListener('scroll', () => {
             let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            console.log('scrollTop', scrollTop)
             if(scrollTop > 100) {
                 this.setState({
                     showBackTop: true
@@ -32,7 +32,7 @@ export default class Index extends Component {
             }
         })
     }
-    
+
     goTop = () => {
         let scrollToTop = window.setInterval(function () {
             let pos = window.pageYOffset;
@@ -49,7 +49,7 @@ export default class Index extends Component {
             <div className='wrap'> 
                <div className='head'>
                     <img alt='' src = {require('../static/images/smile.png')} className = 'left' />
-                    < div className = 'right' >
+                    <div className = 'right'>
                         <ul>
                             {
                                 _.map(textList, (text, index) => {
@@ -70,11 +70,14 @@ export default class Index extends Component {
                         
                         return(
                             <div key={index} className='box'>
-                                <div className='up'></div>
-                                <div className='down'>
-                                    <img src={require('../'+item.logo)} alt='' />
-                                    <span>{item.name}</span>
+                                <div className='up'>
                                 </div>
+                                <Link style={{color: '#000', textDecoration: 'none'}} to={`/${item.routerName}/`}>
+                                    <div className='down'>
+                                        <img src={require('../'+item.logo)} alt='' />
+                                        <span>{item.name}</span>
+                                    </div>
+                                </Link>
                             </div>
                         )
                     }) 
