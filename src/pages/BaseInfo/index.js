@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import Nav from '../../components/Nav/index';
 import './index.less';
 
 export default class Index extends Component {
     render() {
         return (
             <div className='baseInfo'>
-                <Link to='/'>
-                    <div>首页</div>
-                </Link>
+                <div>
+                    <Nav/>
+                </div>
                 <div>
 
                 </div>
