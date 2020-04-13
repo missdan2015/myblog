@@ -134,8 +134,8 @@
   transition: transform 0.5s;
 }
 .wrap .middle .box .up {
-  height: 70%;
-  padding-right: 50px;
+  height: 60%;
+  padding: 20px 70px 0 0;
 }
 .wrap .middle .box .down img {
   width: 10%;

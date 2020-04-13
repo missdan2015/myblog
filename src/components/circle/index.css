@@ -1,0 +1,35 @@
+.bagua {
+  position: relative;
+  right: -150px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+  /*从0-50%用背景色，50%开始到100%用#fff */
+  background-image: linear-gradient(to right, transparent 50%, #fff 50%);
+}
+.bagua::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  width: 0;
+  height: 0;
+  padding: 10px;
+  border-radius: 50%;
+  border: 10px solid #000;
+  background: #fff;
+  background-clip: padding-box;
+}
+.bagua::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  padding: 10px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  background: #000;
+  background-clip: padding-box;
+}

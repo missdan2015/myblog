@@ -1,0 +1,28 @@
+.heart {
+  position: relative;
+  float: right;
+}
+.heart::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 58px;
+  background: red;
+  border-radius: 50px 45px 0 0;
+  /* 设置旋转中心 */
+  transform-origin: 0 100%;
+  transform: rotate(-45deg);
+}
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 58px;
+  top: -25px;
+  left: -25px;
+  background: red;
+  border-radius: 50px 45px 0 0;
+  /* 设置旋转中心 */
+  transform-origin: 0 100%;
+  transform: rotate(45deg);
+}

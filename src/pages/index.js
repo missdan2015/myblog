@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Heart from '../components/like/index';
+import Circle from '../components/circle/index';
+import Progress from '../components/progress/index';
 import './index.less';
 import {
     mainList,
@@ -71,6 +74,7 @@ export default class Index extends Component {
                         return(
                             <div key={index} className='box'>
                                 <div className='up'>
+                                    {(index-1)%3 === 0 && <Progress />}
                                 </div>
                                 <Link style={{color: '#000', textDecoration: 'none'}} to={`/${item.routerName}/`}>
                                     <div className='down'>
