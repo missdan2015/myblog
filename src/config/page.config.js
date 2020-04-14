@@ -1,7 +1,7 @@
 const mainList = [
     {
-        logo: 'static/images/logo1.png',
-        name: 'Personal Information',
+        logo: 'static/images/index.png',
+        name: '首页',
         routerName: 'BaseInfo'
         
     },
@@ -27,23 +27,13 @@ const mainList = [
     },
     {
         logo: 'static/images/logo2.png',
-        name: 'Favorite Movies',
+        name: 'Movies',
         routerName: 'Movies'
     },
     {
         logo: 'static/images/logo2.png',
-        name: 'Classic Books',
+        name: 'Books',
         routerName: 'Books'
-    },
-    {
-        logo: 'static/images/logo4.png',
-        name: 'Ablum',
-        routerName: 'Album'
-    },
-    {
-        logo: 'static/images/logo5.png',
-        name: 'expand',
-        routerName: 'Expand'
     },
 
 ];

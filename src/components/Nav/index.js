@@ -13,12 +13,7 @@ export default class index extends Component {
                     <p className='tag'>Don't flatter yourself too much</p>
                 </div>
                 <ul>
-                    <li key='index'>
-                        <Link style={{color: '#000', textDecoration: 'none'}} to='/'>
-                            <img src={require('../../static/images/index.png')} alt='' />
-                            <span>首页</span>
-                        </Link>
-                    </li>
+                   
                 {
                     _.map(mainList, item => {
                         return(

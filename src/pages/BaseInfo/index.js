@@ -7,9 +7,6 @@ export default class Index extends Component {
         return (
             <div className='baseInfo'>
                 <div>
-                    <Nav/>
-                </div>
-                <div>
 
                 </div>
             </div>
