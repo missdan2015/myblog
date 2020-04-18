@@ -8,12 +8,12 @@ const mainList = [
     {
         logo: 'static/images/logo3.png',
         name: 'JavaScript',
-        routerName: 'Js'
+        routerName: 'JS'
     },
     {
         logo: 'static/images/logo3.png',
         name: 'CSS',
-        routerName: 'Css'
+        routerName: 'CSS'
     },
     {
         logo: 'static/images/logo3.png',

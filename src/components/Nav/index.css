@@ -7,13 +7,15 @@
   text-align: center;
 }
 .navigator .header {
-  height: 150px;
-  background-image: url('../../static/images/4.jpg');
+  height: 200px;
   padding-top: 50px;
+  box-sizing: border-box;
+  background-image: url('../../static/images/b.jpg');
+  background-size: 100% 220px;
 }
 .navigator .header .tag {
+  font-size: 16px;
   margin-top: 10px;
-  font-size: 14px;
 }
 .navigator ul {
   background-color: #fff;
@@ -23,14 +25,18 @@
   background-color: #99cccc;
 }
 .navigator ul li {
-  font-size: 16px;
+  font-size: 20px;
   width: 150px;
   display: inline-block;
+  margin-right: 10px;
+}
+.navigator ul li a {
+  color: #fff;
 }
 .navigator ul li img {
   width: 10%;
   margin: 0 5px -2px 0;
 }
 .navigator ul li:hover {
-  background: #ccc;
+  background: #ddd;
 }

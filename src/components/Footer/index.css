@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  padding: 20px 100px;
+}
+.footer p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul a {
+  color: #6c757d;
+  font-size: 14px;
+}
