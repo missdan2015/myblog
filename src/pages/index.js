@@ -1,11 +1,37 @@
 import React, { Component } from 'react';
 
 import './index.less';
-import { textList } from '../config/page.config';
+import { textList, imgs } from '../config/page.config';
 import _ from 'lodash';
 
 export default class Index extends Component {
- 
+   
+    constructor(props) {
+        super(props);
+        this.state = {
+            curImgIndex: 0
+        }
+    }
+   componentDidMount() {
+       let _this = this;
+        (function () {
+            var slider = document.getElementById("imgSlider");
+            var imgul = slider.getElementsByTagName("ul")[0];
+            var imglis = imgul.getElementsByTagName("li");
+            var len = imglis.length;
+            var index = 0;
+            setInterval(function () {
+                if (index >= len) {
+                    index = 0;
+                }
+                imgul.style.left = -(300 * index) + "px";
+                index++;
+                _this.setState({
+                    curImgIndex: index-1
+                })
+            }, 2000);
+        })();
+   }
 
     render() {
         return (
@@ -24,6 +50,7 @@ export default class Index extends Component {
                                 }) 
                             }
                         </ul>
+                       
                     </div>
                </div>
 
@@ -31,9 +58,34 @@ export default class Index extends Component {
                     <div className='left'>
 
                     </div>
+                    
                     <div className='right'>
-                        <div className='up'>dddddd</div>
-                        <div className='down'> dddd</div>
+                        <div className='up' id='imgSlider'>
+                            <ul>
+                            {
+                                _.map(imgs, (item, index) => {
+                                    return(
+                                        <li key={index}>
+                                            <img src={item} alt=''/>
+                                        </li>
+                                    )
+                                }) 
+                            }
+                            </ul>
+                            <ol>
+                            {
+                                _.map(imgs, (item,index) => {
+                                    return(
+                                    <li>
+                                        <a href="#" style={this.state.curImgIndex === index ? {backgroundColor: '#000', borderRadius:'50%'} : null}>{index+1}</a> 
+                                    </li>
+                                    )
+                                })
+                            }
+                            
+                            </ol>
+                        </div>
+                        <div className='down'> 广告位</div>
                     </div>
                 </div>
                 

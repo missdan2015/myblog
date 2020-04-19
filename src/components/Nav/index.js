@@ -12,7 +12,7 @@ class Tab extends Component{
     render(){
         const { state, dispatch, tabFixed} = this.props;
         return(
-            <div ref='tab_fixed' style={{height: '60px'}}>
+            <div ref='tab_fixed' style={{height: '60px', background: '#ddd'}}>
             <ul className={tabFixed ? 'isFixed':''}>
                 
             {

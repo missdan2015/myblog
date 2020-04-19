@@ -18,7 +18,7 @@ const mainList = [
     {
         logo: 'static/images/logo3.png',
         name: 'React',
-        routerName: 'React'
+        routerName: 'ReactStudy'
     },
     {
         logo: 'static/images/logo3.png',
@@ -146,10 +146,18 @@ const documents = {
             }
         ]
 };
+const imgs = ['https://upload-images.jianshu.io/upload_images/6525066-6dc759096298c992.jpg',
+'https://upload-images.jianshu.io/upload_images/6525066-fb51f90bc53d40b6.jpg',
+'https://upload-images.jianshu.io/upload_images/6525066-32e47ea8babdc52d.jpg',
+'https://upload-images.jianshu.io/upload_images/6525066-01429ac5cddce3ad.jpg',
+'https://upload-images.jianshu.io/upload_images/6525066-a2d5be3f4cea4d8b.jpg'
+];
+
 export {
     mainList,
     textList,
     friendsUrl,
     workOnline,
-    documents
+    documents,
+    imgs,
 };
