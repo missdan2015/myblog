@@ -146,11 +146,11 @@ const documents = {
             }
         ]
 };
-const imgs = ['https://upload-images.jianshu.io/upload_images/6525066-6dc759096298c992.jpg',
-'https://upload-images.jianshu.io/upload_images/6525066-fb51f90bc53d40b6.jpg',
-'https://upload-images.jianshu.io/upload_images/6525066-32e47ea8babdc52d.jpg',
-'https://upload-images.jianshu.io/upload_images/6525066-01429ac5cddce3ad.jpg',
-'https://upload-images.jianshu.io/upload_images/6525066-a2d5be3f4cea4d8b.jpg'
+const imgs = ['https://blog1991.oss-cn-shanghai.aliyuncs.com/sea.jpg',
+'https://blog1991.oss-cn-shanghai.aliyuncs.com/flower.jpg',
+'https://blog1991.oss-cn-shanghai.aliyuncs.com/fish.jpg',
+'https://blog1991.oss-cn-shanghai.aliyuncs.com/cdd%20%2811%29.jpg',
+'https://blog1991.oss-cn-shanghai.aliyuncs.com/cdd.jpg'
 ];
 
 export {
