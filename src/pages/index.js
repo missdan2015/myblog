@@ -76,8 +76,10 @@ export default class Index extends Component {
                             {
                                 _.map(imgs, (item,index) => {
                                     return(
-                                    <li>
-                                        <a href="#" style={this.state.curImgIndex === index ? {backgroundColor: '#000', borderRadius:'50%'} : null}>{index+1}</a> 
+                                    <li key={index} style={{color: '#fff', width: '20px', fontSize: '14px'}}>
+                                        <span style={this.state.curImgIndex === index ? {backgroundColor: '#000', borderRadius:'2px'} : null}>
+                                            {index+1}
+                                        </span> 
                                     </li>
                                     )
                                 })

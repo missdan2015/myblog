@@ -1,4 +1,54 @@
-.jsWrap {
+.leetwrap {
   width: 100%;
   background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leetwrap .head {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  color: orange;
+}
+.leetwrap .content {
+  width: 80%;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+.leetwrap .content .name {
+  border-bottom: 5px solid yellowgreen;
+}
+.leetwrap .content .left {
+  width: 70%;
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 20px;
+}
+.leetwrap .content .left ul {
+  list-style: none;
+}
+.leetwrap .content .left ul li {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.leetwrap .content .left ul li .title {
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+.leetwrap .content .left ul li .title .btn {
+  color: green;
+  font-size: 13px;
+  cursor: pointer;
+}
+.leetwrap .content .left ul li:hover {
+  background-color: #fff;
+}
+.leetwrap .content .right {
+  width: 20%;
+}
+.leetwrap .content .right ul {
+  list-style: none;
 }

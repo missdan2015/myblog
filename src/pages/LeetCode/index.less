@@ -1,4 +1,55 @@
-.jsWrap {
+.leetwrap {
     width: 100%;
     background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .head {
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        color: orange;
+    }
+
+    .content {
+        width: 80%;
+        display: flex;
+        margin: 20px;
+        justify-content: space-between;
+        .name {
+            border-bottom: 5px solid yellowgreen;
+        }
+        .left{
+            width: 70%;
+            background-color: #eee;
+            border-radius: 8px;
+            padding: 20px;
+            ul{
+                list-style: none;
+                li{ 
+                    padding: 20px;
+                    border-bottom: 1px solid #ccc;
+                    .title{
+                        color: #222;
+                        display: flex;
+                        justify-content: space-between;
+                        .btn {
+                            color: green;
+                            font-size: 13px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                li:hover{
+                    background-color: #fff;
+                }
+            }
+        }
+        .right{
+            width: 20%;
+            ul{
+                list-style: none;
+            }
+        }
+    }
 }

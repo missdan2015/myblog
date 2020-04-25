@@ -54,7 +54,7 @@ export default function Index(props) {
     const tabRef = useRef(null);
     useEffect(() => {
        window.addEventListener('scroll', _.throttle(() => handleScrollThree(tabRef.current, setTabFixed, tabFixed), 100));
-    }, [])
+    }, [tabFixed])
 
     return (
         <div className='navigator'>
