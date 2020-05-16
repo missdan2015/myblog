@@ -1,4 +1,115 @@
-.jsWrap {
+.movieWrap {
     width: 100%;
-    background-color: #ddd;
+    background-color: #eee;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 20px;
+        .left {
+            width: 300px;
+            background-color: #fff;
+            height: 400px;   
+
+            .catalogue {
+               padding: 20px 0;
+                text-align: center;
+                li{
+                    display: inline-block;
+                    width: 120px;
+                    box-sizing: border-box;
+                    border: 1px solid #4e6096;
+                    cursor: pointer;
+                    color: #fff;
+                    padding: 10px;
+                    margin: 10px;
+                    background: #7892c2;
+                    border-radius: 3px;
+                    box-shadow: 0px -3px 7px 0px #9fb4f2 inset;
+                    text-shadow: 0px 2px 1px #283966;
+                    background-image: linear-gradient(to bottom, #7892c2, #476e9e);
+                    
+                }
+                li:hover {
+                    background: #476e9e;
+                }
+            }
+        }
+
+        .right {
+            width: 70%;
+            background-color: #fff;
+            padding: 20px;
+            .head {
+                height: 200px;
+                width: 100%;
+                background-color: #eee;
+                box-shadow: inset 0 0 10px #ccc;
+                margin-bottom: 20px;
+                display: flex;
+                .text {
+                    padding: 20px;
+                }
+            }
+            .content {
+                .title {
+                    border-bottom: 5px solid orange;
+                   
+                }
+                ul {
+                    li {
+                        padding: 20px 0;
+                        border-bottom: 1px solid orange;
+                        display: flex;
+                        justify-content: space-between;
+                        .imgBox {
+                                width: 20%;
+                                height: 150px;
+                                border: 1px solid #aaa;
+                            img {
+                                width: 100%;
+                                height:100%;
+                            }
+                        }
+                        .detail {
+                            width: 78%;
+                            .name {
+                                display: flex;
+                                justify-content: space-between;
+                                .span1{
+                                    font-weight: 600;
+                                }
+                            }
+                            .storyBox {
+                                font-size: 14px;
+                                .span1 {
+                                    display: inline-block;
+                                    margin: 10px 0;
+                                    text-indent: 20px;
+                                    color: #222;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display:-webkit-box;
+                                    -webkit-box-orient:vertical;
+                                    -webkit-line-clamp:4;
+                                }
+                                .span2 {
+                                    color: #666;
+                                }
+                            }
+                        }
+                          
+                    }
+                }
+
+            }
+        }
+    }
+    
 }
