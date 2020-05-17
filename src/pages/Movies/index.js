@@ -46,8 +46,8 @@ export default function Index() {
                         </div>
                         <div className='text'>
                             <h3>爱电影，爱生活</h3>
-                            <p style={{padding: '10px 0'}}>怕慢慢会忘记当初看过电影，不想忘记</p>
-                            <p>致敬幕后台前所有的工作者，没有你们的专业和付出，就没有我们的视觉和灵魂的盛宴</p>
+                            <p style={{padding: '10px 0'}}>怕慢慢会忘记当初看过电影和当时的感受，不想忘记</p>
+                            <p>致敬幕后台前所有的工作者，没有你们的专业和付出，我们就不能享受如此多的视觉和灵魂的盛宴</p>
                         </div>
                     </div>
                     <div className='content'>
