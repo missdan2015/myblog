@@ -1,6 +1,5 @@
 .movieWrap {
   width: 100%;
-  background-color: #eee;
 }
 .movieWrap ul {
   list-style: none;
@@ -16,7 +15,6 @@
 }
 .movieWrap .container .left {
   width: 300px;
-  background-color: #fff;
   height: 400px;
 }
 .movieWrap .container .left .catalogue {
@@ -43,7 +41,6 @@
 }
 .movieWrap .container .right {
   width: 70%;
-  background-color: #fff;
   padding: 20px;
 }
 .movieWrap .container .right .head {

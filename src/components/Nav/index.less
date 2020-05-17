@@ -2,22 +2,24 @@
     width: 100%;
     text-align: center;
     .header {
-        height: 200px;
-        padding-top: 50px;
-        box-sizing: border-box;
-        background-image:url('../../static/images/b.jpg');
-        background-size: 100% 220px;
+        background-color: #eee;
+        .myname {
+            width: 500px;
+            height: 100px;
+            margin: 0 auto;
+            padding: 20px;
+            background: no-repeat center/100% url('https://blog1991.oss-cn-shanghai.aliyuncs.com/header/f2.png');
+        }
         .tag {
             font-size: 16px;
             margin-top: 10px;
         }
     }
     ul {
-        background-color: #fff;
+        background-color: #ddd;
         list-style: none;
         height: 60px;
         line-height: 60px;
-        background-color: #9cc;
         li {
             font-size: 20px;
             width: 150px;
@@ -32,7 +34,7 @@
             }
         }
         li:hover {
-            background: #ddd;
+            background: #fff;
         }
     }
     .isFixed {
@@ -40,6 +42,7 @@
         width: 100%;
         top: 0;
         z-index: 1000;
+        box-shadow: 0 1px 6px 0 #333;
     }
     
 }

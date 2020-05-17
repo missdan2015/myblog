@@ -12,7 +12,7 @@ class Tab extends Component{
     render(){
         const { state, dispatch, tabFixed} = this.props;
         return(
-            <div ref='tab_fixed' style={{height: '60px', background: '#ddd'}}>
+            <div ref='tab_fixed' style={{height: '60px', background: '#fff'}}>
             <ul className={tabFixed ? 'isFixed':''}>
                 
             {
@@ -20,7 +20,7 @@ class Tab extends Component{
                     return(
                         <Link key={item.name} style={{color: '#000', textDecoration: 'none'}}  to={index === 0 ? '/':`/${item.routerName}/`}>
                             <li onClick={() => dispatch({type: 'changePage', payload: {index:index}})}
-                                style={state.curPage === index ? {backgroundColor: '#ddd'}:null} 
+                                style={state.curPage === index ? {backgroundColor: '#fff'}:null} 
                             >
                                 <img src={require('../../'+item.logo)} alt='' />
                                 <span>{item.name}</span>
@@ -43,7 +43,7 @@ function handleScrollThree(tabRef, setTabFixed, tabFixed) {
     if (tabFixed !== isTop) {
         setTabFixed(isTop);
     }
-    if (scrollTop <200) {
+    if (scrollTop < 140) {
          setTabFixed(false);
     }
 }
@@ -59,8 +59,10 @@ export default function Index(props) {
     return (
         <div className='navigator'>
             <div className='header'>
-                <h3>Ellen的博客</h3>
-                <p className='tag'>Don't flatter yourself too much</p>
+                <div className='myname'>
+                    <h3>Ellen的博客</h3>
+                    <p className='tag'>Don't flatter yourself too much</p>
+                </div>
             </div>
            <Tab ref={tabRef} state={state} dispatch={dispatch} tabFixed={tabFixed}/>
         </div>

@@ -29,7 +29,9 @@ export default function Index() {
                         {
                             _.map(catalogue, item => {
                                 return(
-                                    <li key={item.key} onClick={() => handleChangeCatalogue(item.key)}>
+                                    <li key={item.key} onClick={() => handleChangeCatalogue(item.key)}
+                                        style={curCatalogue=== item.key ? {background: '#99ff'} : null}
+                                    >
                                         {item.name}
                                     </li>
                                 )

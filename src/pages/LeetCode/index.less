@@ -1,42 +1,60 @@
 .leetwrap {
     width: 100%;
-    background-color: #ddd;
     display: flex;
     flex-direction: column;
     align-items: center;
     .head {
-        width: 80%;
-        margin-top: 20px;
-        display: flex;
+        width: 100%;
+        box-sizing: border-box;
         color: orange;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
 
     .content {
         width: 80%;
         display: flex;
-        margin: 20px;
-        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 20px;
         .name {
             border-bottom: 5px solid yellowgreen;
         }
-        .left{
-            width: 70%;
-            background-color: #eee;
+         .left{
+            width: 200px;
+            margin: 100px 20px 0 0;
+            ul{
+                list-style: none;
+                li {
+                    line-height: 40px;
+                    font-size: 16px;
+                    padding-left: 10px;
+                }
+                li:hover{
+                    background-color: #ddd;
+                    cursor: pointer;
+                }
+            }
+        }
+        .right{
+            width: 80%;
             border-radius: 8px;
-            padding: 20px;
             ul{
                 list-style: none;
                 li{ 
-                    padding: 20px;
+                    padding: 20px 0;
                     border-bottom: 1px solid #ccc;
                     .title{
                         color: #222;
-                        display: flex;
-                        justify-content: space-between;
-                        .btn {
-                            color: green;
-                            font-size: 13px;
+                        margin-bottom: 20px;
+                        .ansBtn {
+                            margin-left: 10px;
+                            font-size: 14px;
+                            padding: 0 5px;
                             cursor: pointer;
+                            color: yellowgreen;
                         }
                     }
                 }
@@ -45,11 +63,6 @@
                 }
             }
         }
-        .right{
-            width: 20%;
-            ul{
-                list-style: none;
-            }
-        }
+       
     }
 }

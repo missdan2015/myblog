@@ -1,54 +1,66 @@
 .leetwrap {
   width: 100%;
-  background-color: #ddd;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .leetwrap .head {
-  width: 80%;
-  margin-top: 20px;
-  display: flex;
+  width: 100%;
+  box-sizing: border-box;
   color: orange;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 .leetwrap .content {
   width: 80%;
   display: flex;
-  margin: 20px;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 .leetwrap .content .name {
   border-bottom: 5px solid yellowgreen;
 }
 .leetwrap .content .left {
-  width: 70%;
-  background-color: #eee;
-  border-radius: 8px;
-  padding: 20px;
+  width: 200px;
+  margin: 100px 20px 0 0;
 }
 .leetwrap .content .left ul {
   list-style: none;
 }
 .leetwrap .content .left ul li {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-}
-.leetwrap .content .left ul li .title {
-  color: #222;
-  display: flex;
-  justify-content: space-between;
-}
-.leetwrap .content .left ul li .title .btn {
-  color: green;
-  font-size: 13px;
-  cursor: pointer;
+  line-height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
 }
 .leetwrap .content .left ul li:hover {
-  background-color: #fff;
+  background-color: #ddd;
+  cursor: pointer;
 }
 .leetwrap .content .right {
-  width: 20%;
+  width: 80%;
+  border-radius: 8px;
 }
 .leetwrap .content .right ul {
   list-style: none;
+}
+.leetwrap .content .right ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.leetwrap .content .right ul li .title {
+  color: #222;
+  margin-bottom: 20px;
+}
+.leetwrap .content .right ul li .title .ansBtn {
+  margin-left: 10px;
+  font-size: 14px;
+  padding: 0 5px;
+  cursor: pointer;
+  color: yellowgreen;
+}
+.leetwrap .content .right ul li:hover {
+  background-color: #fff;
 }
