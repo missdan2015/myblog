@@ -9,23 +9,24 @@
   box-sizing: border-box;
   color: orange;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ddd;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-size: 14px;
 }
 .leetwrap .content {
   width: 80%;
-  display: flex;
   margin: 0 auto;
   padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .leetwrap .content .name {
   border-bottom: 5px solid yellowgreen;
 }
 .leetwrap .content .left {
-  width: 200px;
-  margin: 100px 20px 0 0;
+  width: 130px;
+  margin-top: 135px;
 }
 .leetwrap .content .left ul {
   list-style: none;
@@ -45,19 +46,26 @@
 }
 .leetwrap .content .right ul {
   list-style: none;
+  margin-bottom: 50px;
 }
 .leetwrap .content .right ul li {
   padding: 20px 0;
+  display: flex;
   border-bottom: 1px solid #ccc;
 }
 .leetwrap .content .right ul li .title {
   color: #222;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.leetwrap .content .right ul li .title .ansBtn {
-  margin-left: 10px;
-  font-size: 14px;
+.leetwrap .content .right ul li .title .star {
+  background-color: orange;
+  font-size: 12px;
+  border-radius: 2px;
   padding: 0 5px;
+  margin-left: 10px;
+}
+.leetwrap .content .right ul li .ansBtn {
+  font-size: 14px;
   cursor: pointer;
   color: yellowgreen;
 }

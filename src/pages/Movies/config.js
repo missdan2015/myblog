@@ -226,7 +226,17 @@ const data = [
                 comment: '网友觉得第一部和第三部是最经典的；一部隐喻性极强的电影。空间、人性、政治、环境~~',
                 star: 5,
                 actor: ''
-            }
+            },
+             {
+                 name: '沉默的羔羊',
+                 id: 14,
+                 score: 8.8,
+                 imgUrl: 'https://blog1991.oss-cn-shanghai.aliyuncs.com/movie2/sheep.png',
+                 detail: '见习特工克拉丽斯（茱迪•福斯特 Jodie Foster 饰）所在的城市发生了一系列专剥女性皮的命案。克拉丽斯奉命前去访问被收监的精神有问题的精神病学家汉尼拔博士（安东尼•霍普金斯 Anthony Hopkins 饰），以获取罪犯犯罪心理资料。汉尼拔要求克拉丽斯说出个人经历供他分析以换取他的协助。克拉丽斯的思维完全不是博士的对手，临阵败走了。',
+                 comment: '高智商犯罪总能让人回味无穷',
+                 star: 4,
+                 actor: ''
+             }
         ]
     },
     {

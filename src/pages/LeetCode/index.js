@@ -36,11 +36,15 @@ export default function Index() {
                         _.map(curData.list, (item, index) => {
                             return(
                                 <li key={item.num+'-'+index}>
-                                    <div className='title'>
-                                        <span>{item.num}-{item.name}</span>
-                                        <span className='ansBtn'>参考答案</span>
+                                    <span style={{marginRight: '20px'}}>{index+1}.</span>
+                                    <div>
+                                        <div className='title'>
+                                            <span>{item.num}-{item.name}</span>
+                                            {item.star && <span className='star'>{item.star}</span>}
+                                        </div>
+                                        <p style={{fontSize: '13px', color: '#666'}}>{item.title}</p>
+                                        <p className = 'ansBtn'> 参考答案 </p>
                                     </div>
-                                    <p style={{fontSize: '13px', color: '#666'}}>{item.title}</p>
                                 </li>
                             )
                         })                   

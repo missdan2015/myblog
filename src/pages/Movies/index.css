@@ -14,8 +14,7 @@
   padding: 20px;
 }
 .movieWrap .container .left {
-  width: 300px;
-  height: 400px;
+  width: 130px;
 }
 .movieWrap .container .left .catalogue {
   padding: 20px 0;
@@ -29,7 +28,7 @@
   cursor: pointer;
   color: #fff;
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 20px;
   background: #7892c2;
   border-radius: 3px;
   box-shadow: 0px -3px 7px 0px #9fb4f2 inset;
@@ -40,7 +39,7 @@
   background: #476e9e;
 }
 .movieWrap .container .right {
-  width: 70%;
+  width: 80%;
   padding: 20px;
 }
 .movieWrap .container .right .head {

@@ -27,9 +27,9 @@ export default function Index() {
                 <div className='left'>
                     <ul className='catalogue'>
                         {
-                            _.map(catalogue, item => {
+                            _.map(catalogue, (item, index) => {
                                 return(
-                                    <li key={item.key} onClick={() => handleChangeCatalogue(item.key)}
+                                    <li key={item.key+'-'+index} onClick={() => handleChangeCatalogue(item.key)}
                                         style={curCatalogue=== item.key ? {background: '#99ff'} : null}
                                     >
                                         {item.name}
@@ -56,9 +56,9 @@ export default function Index() {
                         <p className='title'>列表（排名不分先后,星星个数表示个人喜爱程度）</p>
                         <ul>
                             {
-                                _.map(curData.movieList, item => {
+                                _.map(curData.movieList, (item, index) => {
                                     return(
-                                        <li key={item.id}>
+                                        <li key={item.id + '-' + index}>
                                             <span className='imgBox'>
                                                 <img src={item.imgUrl} alt=''/>
                                             </span>

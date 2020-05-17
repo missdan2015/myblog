@@ -8,9 +8,9 @@
         box-sizing: border-box;
         color: orange;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: #ddd;
         padding: 10px;
-        margin-bottom: 20px;
+        margin: 20px 0;
         font-size: 14px;
     }
 
@@ -19,12 +19,14 @@
         display: flex;
         margin: 0 auto;
         padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
         .name {
             border-bottom: 5px solid yellowgreen;
         }
          .left{
-            width: 200px;
-            margin: 100px 20px 0 0;
+            width: 130px;
+            margin-top: 135px;
             ul{
                 list-style: none;
                 li {
@@ -43,19 +45,26 @@
             border-radius: 8px;
             ul{
                 list-style: none;
+                margin-bottom: 50px;
                 li{ 
                     padding: 20px 0;
+                    display: flex;
                     border-bottom: 1px solid #ccc;
                     .title{
                         color: #222;
-                        margin-bottom: 20px;
-                        .ansBtn {
-                            margin-left: 10px;
-                            font-size: 14px;
+                        margin-bottom: 10px;
+                        .star {
+                            background-color: orange;
+                            font-size: 12px;
+                            border-radius: 2px;
                             padding: 0 5px;
-                            cursor: pointer;
-                            color: yellowgreen;
+                            margin-left: 10px;
                         }
+                    }
+                    .ansBtn {
+                        font-size: 14px;
+                        cursor: pointer;
+                        color: yellowgreen;
                     }
                 }
                 li:hover{

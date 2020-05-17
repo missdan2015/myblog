@@ -1,4 +1,39 @@
-.jsWrap {
+.bookWrap {
     width: 100%;
-    background-color: #ddd;
+    display: flex;
+    margin: 50px 0;
+    .content {
+        width: 80%;
+        height: 600px;
+        background-color: #eee;
+        border: 20px solid #ccddff;
+        text-align: center;
+
+        .bookList {
+            list-style: none;
+            li{ 
+                display: inline-block; 
+                width: 140px;
+                height: 180px;
+                margin: 20px;
+                img{
+                    border-radius: 10px;
+                }
+                .owner {
+                    font-size: 12px;
+                    background-color: #aaa;
+                    opacity: 0.8;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    text-align: center;
+                    line-height: 30px;
+                    position: relative;
+                    top: -35px;
+                }
+            }
+            li:hover {
+                box-shadow: 0 0 10px #99ffcc;
+            }
+        }
+    }
 }
