@@ -12,7 +12,7 @@ import Footer from './components/Footer/index';
 import BackTop from './components/BackTop/index';
 function reducer(state, action) {
     switch(action.type) {
-        case 'changePage': {console.log(state,'fffffffffff', action);return {...state, curPage: action.payload.index}} 
+        case 'changePage': {return {...state, curPage: action.payload.index}} 
         default: return state;
     }
 }
