@@ -1,10 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 import './index.less';
 import _ from 'lodash';
 import { catalogue, data } from './config';
 
+
+function handleScroll(navRef, navFixed, setNavFixed) {
+    let offsetTop = navRef.getBoundingClientRect().top;
+    let isTop = offsetTop < 60 ? true : false;
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (navFixed !== isTop) {
+        setNavFixed(isTop);
+    }
+    if (scrollTop < 200) {
+        setNavFixed(false);
+    }
+}
+
 export default function Index() {
     const [curCatalogue, setCurCatalogue] = useState('love');
+    const [navFixed, setNavFixed] = useState(false);
     const handleChangeCatalogue = (key) => {
         setCurCatalogue(key);
     }
@@ -20,17 +34,22 @@ export default function Index() {
         }
 
          return result
-     }
+    }
+    const navRef = useRef();
+    // useEffect(() => {
+    //     window.addEventListener('scroll', _.throttle(() => handleScroll(navRef.current, navFixed, setNavFixed), 100));
+    // }, [navFixed])
+
     return (
         <div className='movieWrap'>
             <div className="container">
-                <div className='left'>
+                <div className={navFixed ? 'left isleftFixed' : 'left'} ref={navRef}>
                     <ul className='catalogue'>
                         {
                             _.map(catalogue, (item, index) => {
                                 return(
                                     <li key={item.key+'-'+index} onClick={() => handleChangeCatalogue(item.key)}
-                                        style={curCatalogue=== item.key ? {background: '#99ff'} : null}
+                                        style={curCatalogue=== item.key ? {background: '#3366cc'} : null}
                                     >
                                         {item.name}
                                     </li>
@@ -42,7 +61,7 @@ export default function Index() {
                 <div className='right'>
                     <div className='head'>
                         <div className='video'>
-                            <video width="320" height="200" controls="controls" autoplay="autoplay" loop muted="true">
+                            <video width="320" height="200" controls="controls" autoPlay="autoplay" loop muted="true">
                             <source src={require('../../static/images/snake.mp4')} type="video/mp4" />
                             </video>
                         </div>
@@ -58,7 +77,7 @@ export default function Index() {
                             {
                                 _.map(curData.movieList, (item, index) => {
                                     return(
-                                        <li key={item.id + '-' + index}>
+                                        <li key={item.name + '-' + index}>
                                             <span className='imgBox'>
                                                 <img src={item.imgUrl} alt=''/>
                                             </span>

@@ -6,7 +6,7 @@ import { pageContext } from '../../App';
 import './index.less';
 
 
-
+// 因为函数组件没有实例，如果想用ref获取子组件的实例，子组件组要写成类组件。
 class Tab extends Component{
   
     render(){
@@ -36,8 +36,9 @@ class Tab extends Component{
     }
 }
 
-function handleScrollThree(tabRef, setTabFixed, tabFixed) {
+function handleScroll(tabRef, setTabFixed, tabFixed) {
     let offsetTop = tabRef.refs.tab_fixed.getBoundingClientRect().top;
+
     let isTop = offsetTop < 0 ? true : false;
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (tabFixed !== isTop) {
@@ -53,7 +54,7 @@ export default function Index(props) {
     const [tabFixed, setTabFixed] = useState(false);
     const tabRef = useRef(null);
     useEffect(() => {
-       window.addEventListener('scroll', _.throttle(() => handleScrollThree(tabRef.current, setTabFixed, tabFixed), 100));
+       window.addEventListener('scroll', _.throttle(() => handleScroll(tabRef.current, setTabFixed, tabFixed), 100));
     }, [tabFixed])
 
     return (

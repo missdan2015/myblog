@@ -15,9 +15,9 @@ export default function Index() {
                 <div className='left'>
                     <ul>
                         {
-                            _.map(tags, tag => {
+                            _.map(tags, (tag, index) => {
                                 return(
-                                    <li key={tag.id} onClick={() => setTag(tag.key)} 
+                                    <li key={tag.id+'_'+index} onClick={() => setTag(tag.key)} 
                                     style={curTag === tag.key ? {background: '#ddd', borderLeft: '2px solid yellowgreen'} : null}>
                                         <p>{tag.name}</p>
                                     </li>

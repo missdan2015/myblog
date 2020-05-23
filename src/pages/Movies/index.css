@@ -38,6 +38,12 @@
 .movieWrap .container .left .catalogue li:hover {
   background: #476e9e;
 }
+.movieWrap .container .isleftFixed {
+  position: fixed;
+  z-index: 100;
+  top: 60px;
+  left: 200px;
+}
 .movieWrap .container .right {
   width: 80%;
   padding: 20px;
@@ -97,4 +103,7 @@
 }
 .movieWrap .container .right .content ul li .detail .storyBox .span2 {
   color: #666;
+}
+.movieWrap .container .right .content ul li:hover {
+  background-color: #eee;
 }

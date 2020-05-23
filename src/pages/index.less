@@ -2,17 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-   .head {
-       width: 80%;
-       margin-top: 20px;
-       .left {
+    padding: 50px 20px;
+   .contentBox {
+       width: 100%;
+       margin-top: 50px;
+       .leftImg {
             float: left;
-            margin-right: 20px;
-            margin-top: -15px;
-            width: 5%;
+            margin:-30px 20px 0 20px;
+            width: 100px;
+            @keyframes  ani{
+                0%{ opacity: 0;}
+                100%{opacity: 1;}
+            }
        }
-       .right {
+       .rightText {
             width: 80%;
             float: left;
             font-weight: 600;
@@ -66,7 +69,7 @@
 
    }
 
-    .middle {
+    .container {
      width: 80%;
      display: flex;
      flex-direction: row;
@@ -74,16 +77,24 @@
      justify-content: space-between;
      .left {
          width: 68%;
-         height: 1000px;
+         height: 500px;
          background-color: #eee;
          border-radius: 8px;
+         .slidertext {
+             height: 100px;
+             color: #9966dd;
+             font-size: 32px;
+             text-align: center;
+             margin-top: 50px;
+             width: 100%;
+         }
      }
      .right {
         width: 30%;
         display: flex;
         flex-direction: column;
      }
-     .up{
+     .imgSlider {
         width: 300px;
         height: 200px;
         overflow: hidden;
@@ -123,14 +134,7 @@
         }
        
      }
-     .down {
-        width: 300px;
-        height: 200px;
-        text-align: center;
-        background-color: #99cccc;
-        border-radius: 8px;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.9)
-     }
+    
     }
 
 }

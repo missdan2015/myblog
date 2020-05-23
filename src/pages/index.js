@@ -13,14 +13,14 @@ export default class Index extends Component {
         }
     }
    componentDidMount() {
-       let _this = this;
-        (function () {
-            var slider = document.getElementById("imgSlider");
-            var imgul = slider.getElementsByTagName("ul")[0];
-            var imglis = imgul.getElementsByTagName("li");
-            var len = imglis.length;
-            var index = 0;
-            setInterval(function () {
+        let _this = this;
+        this.sliderImg = (function () {
+            let slider = document.getElementById("imgSlider");
+            let imgul = slider.getElementsByTagName("ul")[0];
+            let imglis = imgul.getElementsByTagName("li");
+            let len = imglis.length;
+            let index = 0;
+             setInterval(function () {
                 if (index >= len) {
                     index = 0;
                 }
@@ -31,36 +31,53 @@ export default class Index extends Component {
                 })
             }, 2000);
         })();
+
+        let slidertext = document.getElementById('slidertext');
+        let newText = document.getElementById('newText');
+        let i = 0;
+        this.timer = setInterval(() => {
+            newText.innerHTML = (slidertext.innerHTML || '').substring(0, i);
+            i++;
+        }, 500);
    }
+    componentWillUnmount() {
+        this.sliderImg= null; //闭包回收
+        clearInterval(this.timer)
+    }
 
     render() {
         return (
             <div className='wrap'> 
-               <div className='head'>
-                    <img alt='' src = {require('../static/images/smile.png')} className = 'left' />
-                    <div className = 'right'>
-                        <ul>
-                            {
-                                _.map(textList, (text, index) => {
-                                    return(
-                                        <li key={index}>
-                                            <span>{text.detail}</span>
-                                        </li>
-                                    )
-                                }) 
-                            }
-                        </ul>
-                       
-                    </div>
-               </div>
-
-               <div className='middle'>
+               
+               <div className='container'>
                     <div className='left'>
 
+                        <div id="slidertext" style={{display:'none'}}>
+                              欢迎来到Ellen的博客！
+                        </div>
+                        <div id="newText" className='slidertext'> </div>
+                        
+                        <div className = 'contentBox' >
+                            <img alt='' src = {require('../static/images/smile.png')} className='leftImg' />
+                            <div className='rightText'>
+                                <ul>
+                                    {
+                                        _.map(textList, (text, index) => {
+                                            return(
+                                                <li key={index}>
+                                                    <span>{text.detail}</span>
+                                                </li>
+                                            )
+                                        }) 
+                                    }
+                                </ul>
+                            
+                            </div>
+                        </div>
                     </div>
                     
                     <div className='right'>
-                        <div className='up' id='imgSlider'>
+                        <div className='imgSlider' id='imgSlider'>
                             <ul>
                             {
                                 _.map(imgs, (item, index) => {
@@ -87,7 +104,6 @@ export default class Index extends Component {
                             
                             </ol>
                         </div>
-                        <div className='down'> 广告位</div>
                     </div>
                 </div>
                 
