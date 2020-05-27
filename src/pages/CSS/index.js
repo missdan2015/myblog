@@ -21,7 +21,7 @@ export default function Index() {
                             return (
                             <Link to={index === 0 ? '/CSS':`/CSS/${item.routerName}/`}  style={{color: '#000', textDecoration: 'none'}} >    
                                 <li key={item.key+'-'+index}  onClick={() => setArticle(index)}
-                                    style={curArticle === index ? {color: 'blue', background: '#eee'}:null} >
+                                    style={curArticle === index ? {color: 'blue', background: '#eee', borderLeft: '2px solid blue'}:null} >
                                    <span>{index+1}.</span>&nbsp;
                                    {item.name}
                                 </li>

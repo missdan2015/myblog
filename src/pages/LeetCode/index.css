@@ -6,27 +6,22 @@
 }
 .leetwrap .head {
   width: 100%;
-  box-sizing: border-box;
+  border-bottom: 4px solid yellowgreen;
+}
+.leetwrap .head .tips {
+  margin-left: 10px;
   color: orange;
-  border-radius: 5px;
-  background-color: #ddd;
-  padding: 10px;
-  margin: 20px 0;
   font-size: 14px;
 }
 .leetwrap .content {
   width: 80%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 40px;
   display: flex;
-  justify-content: space-around;
-}
-.leetwrap .content .name {
-  border-bottom: 5px solid yellowgreen;
 }
 .leetwrap .content .left {
-  width: 130px;
-  margin-top: 135px;
+  width: 210px;
+  margin: 25px;
 }
 .leetwrap .content .left ul {
   list-style: none;

@@ -27,10 +27,13 @@ export default function Index() {
                     </ul>
                 </div>
                 <div className='right'>
+                    
                     <div className='head'>
+                        <span>所有题目列表</span>
+                        <span className='tips'>
                         题目来源于<a href='https://leetcode-cn.com/' target='blank'>中国版LeetCode</a>；收录的题目均为个人曾经刷过的一些简单类型的，答案仅供参考，使用JavaScript完成
+                        </span>
                     </div>
-                    <div className='name'>所有题目列表</div>
                     <ul>
                     {
                         _.map(curData.list, (item, index) => {

@@ -11,13 +11,12 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px 20px;
 }
 .movieWrap .container .left {
   width: 130px;
 }
 .movieWrap .container .left .catalogue {
-  padding: 20px 0;
   text-align: center;
 }
 .movieWrap .container .left .catalogue li {
@@ -46,7 +45,6 @@
 }
 .movieWrap .container .right {
   width: 80%;
-  padding: 20px;
 }
 .movieWrap .container .right .head {
   height: 200px;

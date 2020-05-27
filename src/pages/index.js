@@ -12,7 +12,7 @@ export default class Index extends Component {
             curImgIndex: 0
         }
     }
-   componentDidMount() {
+    componentDidMount() {
         let _this = this;
         this.sliderImg = (function () {
             let slider = document.getElementById("imgSlider");

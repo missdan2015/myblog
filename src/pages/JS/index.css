@@ -1,4 +1,30 @@
 .jsWrap {
-  width: 100%;
-  background-color: #ddd;
+  width: 80%;
+  padding: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+.jsWrap ul {
+  list-style: none;
+}
+.jsWrap .left {
+  width: 250px;
+  float: left;
+}
+.jsWrap .left ul {
+  text-align: left;
+}
+.jsWrap .left ul li {
+  line-height: 40px;
+  padding: 10px;
+}
+.jsWrap .left ul li:hover {
+  background-color: #eee;
+}
+.jsWrap .right {
+  width: 70%;
+  margin-left: 250px;
+  padding: 60px 30px 60px 30px;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
 }
