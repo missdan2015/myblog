@@ -1,15 +1,14 @@
 .reactWrap {
   width: 80%;
   padding: 50px;
-  text-align: center;
   margin: 0 auto;
+  display: flex;
 }
 .reactWrap ul {
   list-style: none;
 }
 .reactWrap .left {
   width: 250px;
-  float: left;
 }
 .reactWrap .left ul {
   text-align: left;
@@ -23,8 +22,6 @@
 }
 .reactWrap .right {
   width: 70%;
-  margin-left: 250px;
-  padding: 60px 30px 60px 30px;
   background-color: #fff;
   border: 1px solid #f1f1f1;
 }

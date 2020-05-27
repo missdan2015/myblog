@@ -1,36 +1,33 @@
 .reactWrap {
-     width: 80%;
-     padding: 50px;
-     text-align: center;
-     margin: 0 auto;
+ width: 80%;
+ padding: 50px;
+ margin: 0 auto;
+ display: flex;
+
+ ul {
+     list-style: none;
+ }
+
+ .left {
+     width: 250px;
 
      ul {
-         list-style: none;
-     }
+         text-align: left;
 
-     .left {
-         width: 250px;
-         float: left;
+         li {
+             line-height: 40px;
+             padding: 10px;
+         }
 
-         ul {
-             text-align: left;
-
-             li {
-                 line-height: 40px;
-                 padding: 10px;
-             }
-
-             li:hover {
-                 background-color: #eee;
-             }
+         li:hover {
+             background-color: #eee;
          }
      }
+ }
 
-     .right {
-         width: 70%;
-         margin-left: 250px;
-         padding: 60px 30px 60px 30px;
-         background-color: #fff;
-         border: 1px solid #f1f1f1;
-     }
+ .right {
+     width: 70%;
+     background-color: #fff;
+     border: 1px solid #f1f1f1;
+ }
 }
