@@ -21,6 +21,33 @@
 }
 .jsWrap .right {
   width: 70%;
-  background-color: #fff;
-  border: 1px solid #f1f1f1;
+  background-color: #eee;
+  margin-left: 20px;
+  box-shadow: 10px 10px 10px #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+.jsWrap .article {
+  font-size: 14px;
+}
+.jsWrap .article p {
+  margin: 10px 0;
+}
+.jsWrap blockquote {
+  color: #222;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin: 22px 0;
+  border-left: 4px solid #cbcbcb;
+  background-color: #ddd;
+}
+.jsWrap .article2 .ul1 {
+  list-style: circle;
+  margin-left: 20px;
+}
+.jsWrap .article2 .ul1 li {
+  padding: 10px;
+}
+.jsWrap .article2 .ul1 li span {
+  margin-left: 20px;
 }
