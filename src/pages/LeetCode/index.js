@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { articleList, tags } from './config';
 import _ from 'lodash';
 import './index.less';
-
+import ReactMarkdown from 'react-markdown';
 export default function Index() {
      
     const [curTag, setTag] = useState('array');
@@ -47,6 +47,12 @@ export default function Index() {
                                         </div>
                                         <p style={{fontSize: '13px', color: '#666'}}>{item.title}</p>
                                         <p className = 'ansBtn'> 参考答案 </p>
+                                        <div id={'answer'+index}>
+                                            <ReactMarkdown source = {
+                                                item.answer
+                                            }
+                                            />
+                                        </div>
                                     </div>
                                 </li>
                             )

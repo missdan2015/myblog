@@ -36,14 +36,12 @@ export default function Index() {
          return result
     }
     const navRef = useRef();
-    // useEffect(() => {
-    //     window.addEventListener('scroll', _.throttle(() => handleScroll(navRef.current, navFixed, setNavFixed), 100));
-    // }, [navFixed])
+   
 
     return (
         <div className='movieWrap'>
             <div className="container">
-                <div className={navFixed ? 'left isleftFixed' : 'left'} ref={navRef}>
+                <div className='left' ref={navRef}>
                     <ul className='catalogue'>
                         {
                             _.map(catalogue, (item, index) => {

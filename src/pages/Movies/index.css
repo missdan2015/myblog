@@ -37,12 +37,6 @@
 .movieWrap .container .left .catalogue li:hover {
   background: #476e9e;
 }
-.movieWrap .container .isleftFixed {
-  position: fixed;
-  z-index: 100;
-  top: 60px;
-  left: 200px;
-}
 .movieWrap .container .right {
   width: 80%;
 }
