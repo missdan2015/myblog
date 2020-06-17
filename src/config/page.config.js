@@ -20,11 +20,11 @@ const mainList = [
         name: 'React',
         routerName: 'ReactStudy'
     },
-    {
-        logo: 'static/images/logo3.png',
-        name: 'LeetCode',
-        routerName: 'LeetCode'
-    },
+    // {
+    //     logo: 'static/images/logo3.png',
+    //     name: 'LeetCode',
+    //     routerName: 'LeetCode'
+    // },
     {
         logo: 'static/images/logo2.png',
         name: 'Movies',
