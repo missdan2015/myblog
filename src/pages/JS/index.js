@@ -7,6 +7,7 @@ import { HashRouter as Router,Route} from 'react-router-dom';
 import Article1 from './Article1/index';
 import Article2 from './Article2/index';
 import Article3 from './Article3/index';
+import Article4 from './Article4/index';
 
 export default function Index() {
     const [curArticle, setArticle] = useState(0);
@@ -34,6 +35,7 @@ export default function Index() {
                     <Route exact path="/JS" component={Article1} />
                     <Route path="/JS/Article2" component={Article2} />
                     <Route path="/JS/Article3" component={Article3} />
+                    <Route path="/JS/Article4" component={Article4} />
                 </Router>
             </div>
         </div>

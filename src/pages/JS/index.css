@@ -27,6 +27,20 @@
   border-radius: 5px;
   padding: 20px;
 }
+.jsWrap .right ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+.jsWrap .right ul h4 {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+}
+.jsWrap .right ul p {
+  font-size: 14px;
+  color: #666;
+  padding: 10px;
+}
 .jsWrap .article {
   font-size: 14px;
 }
@@ -40,6 +54,17 @@
   margin: 22px 0;
   border-left: 4px solid #cbcbcb;
   background-color: #ddd;
+  font-size: 14px;
+}
+.jsWrap pre {
+  margin: 15px 0 0 0;
+  padding: 10px;
+  border: 0;
+  border: 1px dotted #785;
+  background: #f5f5f5;
+  line-height: 1.4;
+  font-family: Consolas;
+  font-size: 14px;
 }
 .jsWrap .article2 .ul1 {
   list-style: circle;

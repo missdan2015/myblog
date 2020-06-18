@@ -6,7 +6,7 @@ export default class Index extends Component {
         return (
             <div>
                <pre>
-                矩形-rect; 圆形-circle; 椭圆-ellipse; 线-line; 折线-polyline; 多边形-poligon; 路径-path
+                <span style={{fontSize: '12px'}}>矩形-rect; 圆形-circle; 椭圆-ellipse; 线-line; 折线-polyline; 多边形-poligon; 路径-path</span>
                </pre>
                <blockquote>
                    SVG 文件可通过以下标签嵌入 HTML 文档：embed、object 或者 iframe
