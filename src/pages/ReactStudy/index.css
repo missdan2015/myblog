@@ -21,6 +21,51 @@
 }
 .reactWrap .right {
   width: 70%;
-  background-color: #fff;
-  border: 1px solid #f1f1f1;
+  background-color: #eee;
+  margin-left: 20px;
+  box-shadow: 10px 10px 10px #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+.reactWrap .right ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+.reactWrap .right ul h4 {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+}
+.reactWrap .right ul p {
+  font-size: 14px;
+  color: #666;
+  padding: 10px;
+}
+.reactWrap blockquote {
+  color: #222;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin: 22px 0;
+  border-left: 4px solid #cbcbcb;
+  background-color: #ddd;
+  font-size: 14px;
+}
+.reactWrap pre {
+  margin: 15px 0 0 0;
+  padding: 10px;
+  border: 0;
+  border: 1px dotted #785;
+  background: #f5f5f5;
+  line-height: 1.4;
+  font-family: Consolas;
+  font-size: 14px;
+}
+.reactWrap button {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.reactWrap input {
+  font-size: 16px;
+  padding: 5px 10px;
 }

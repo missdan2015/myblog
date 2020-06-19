@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+export default function Index() {
 
-export default function index() {
-    return (
-        <div>
-            状态管理
-        </div>
-    )
+  return (
+    <div>
+       
+    </div>
+  )
 }
