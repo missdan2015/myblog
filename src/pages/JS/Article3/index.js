@@ -7,27 +7,39 @@ export default function index() {
                 <li>
                     <h4>对象</h4>
                     <blockquote>js也是面向对象编程，所以出现那么一句话叫万物皆对象</blockquote>
-                    <p>那么创建对象得方式有哪些呢？<br></br>
-                    (1) let obj1 = new Object();<br></br>
-                    (2) let obj2 = { `{ }` };<br></br>
-                    (3) es5中通过构造函数实例化一个对象<br></br>
-                    (4) es6中通过class实例化对象<br></br></p>
+                    <p>那么创建对象得方式有哪些呢？<br />
+                    (1) let obj1 = new Object();<br />
+                    (2) let obj2 = { `{ }` };-------这不是一个纯粹的空对象，它会继承原型链上的方法<br />
+                    (3) es5中通过构造函数实例化一个对象<br />
+                    (4) es6中通过class实例化对象<br></br>
+                    (5) Object.create(obj), 这里如果obj传null，就创建的了一个真正的空对象，没有继承Object原型链上的任何方法
+                     Object.create(null) 好处是不用考虑会和原型链上的属性重名问题.
+                    </p>
                     
                 </li>
                 <li>
-                    <h4>构造函数</h4>
+                    <h4>创建对象常用的几种方式</h4>
                     <blockquote>
-                        构造函数的三大特点：
+                        1. 构造函数方式。先说说构造函数的几个特征：
 
                         a： 构造函数的函数名的第一个字母通常大写。
 
                         b： 函数体内<mark>使用this关键字</mark>， 代表所要生成的对象实例, 如果没使用就当普通函数来看。
 
                         c： 生成对象的时候， 必须使用new命令来调用构造函数。
+                        缺点：在使用构造函数创建对象时， 每个方法都会在实例对象中重新创建一遍，浪费内存
                     </blockquote>
-                    <p style={{color: '#222'}}>下图展示三种方式定义一个构造函数，请思考三种方法得区别</p>
+                    <blockquote>
+                        2. 原型模式：缺点是所有的实例都是共享一组属性，不支持传参。
+                    </blockquote>
+                    <blockquote>
+                        3. 组合构造函数和原型模式： 构造函数模式用于定义实例属性， 而原型模式用于定义方法和共享的属性
+                    </blockquote>
+                    <blockquote>
+                        4. 动态原型模式
+                    </blockquote>
                     <div style={{width: '100%'}}>
-                        <img style={{width: '100%'}} src={require('../../../static/images/css5.png')} alt='' />
+                        <img style={{width: '100%'}} src={require('../../../static/images/css9.png')} alt='' />
                     </div>
                     <blockquote>
                         <mark>如果构造函数内部有return语句:</mark><br></br>
